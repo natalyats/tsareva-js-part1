@@ -1,0 +1,19 @@
+<script>
+	function countBs(a) {
+  var i, c=0;
+  for(i=0;i<a.length;i++ ) {
+    if(a.charAt(i)=='B') c++;
+  }
+  return c;
+}
+function countChar(a,b) {
+  var i,c=0;
+  for(i=0;i<a.length;i++ ) {
+    if(a.charAt(i)==b) c++;
+  }
+  return c;
+}
+console.log(countBs('ABBABABAIBMBUBU'));     // 7
+console.log(countChar('ABBAIBMADOBE','A'));   // 3
+ 
+</script>
