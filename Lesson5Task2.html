@@ -1,0 +1,38 @@
+<script>
+
+function num2Obj(num) {
+
+        if(num>999 || num<0) {
+
+        console.log('Ошибка: допустимый диапазон 0-999');
+
+        var obj={};
+
+        return obj;
+
+        } 
+
+          else {
+
+           var digits=['единицы','десятки','сотни'];
+
+           var obj={};
+
+           var i=0;
+
+          for(var i=0; num!=0; i++){
+
+          obj[digits[i]]=num%10;
+
+          num=(num-num%10)/10;
+
+        }
+
+        }  
+
+        return obj;
+}
+
+console.log(num2Obj(245)); //Object {единицы: 5, десятки: 4, сотни: 2}
+
+</script>

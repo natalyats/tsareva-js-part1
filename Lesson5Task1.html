@@ -1,0 +1,23 @@
+<script>
+
+function rgb2Hex(red,green,blue){
+
+    
+        function dec2Hex(decimal){
+       
+            return decimal > 15 ? decimal.toString(16) : '0' + decimal.toString(16);
+        }
+
+        var rgb=[dec2Hex(red),dec2Hex(green),dec2Hex(blue)]
+
+        return rgb
+}
+
+console.log(rgb2Hex(5,18,150)); //"05", "12", "96"
+
+</script>
+
+
+
+
+
